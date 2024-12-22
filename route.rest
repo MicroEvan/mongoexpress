@@ -1,0 +1,24 @@
+GET http://127.0.0.1:3000/subscribers
+
+###
+GET http://127.0.0.1:3000/subscribers/67681018caac12241c8e8cce
+
+###
+POST http://127.0.0.1:3000/subscribers
+Content-Type: application/json
+
+{
+    "name": "John Doe",
+    "subscribedToChannel": "Makai the webdev"
+}
+
+###
+DELETE http://127.0.0.1:3000/subscribers/67681018caac12241c8e8cce
+
+###
+PATCH http://127.0.0.1:3000/subscribers/6768119abc69b94ad62b6242
+Content-Type: application/json
+
+{
+    "name": "Jane Doe"
+}
